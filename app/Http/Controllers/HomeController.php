@@ -36,6 +36,6 @@ class HomeController extends Controller
 
     public function ticket()
     {
-      return view('ticket');
+      return view('ticket')->with('title', 'test');
     }
 }

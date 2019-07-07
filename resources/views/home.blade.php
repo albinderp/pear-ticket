@@ -38,6 +38,22 @@
                         <td>{{ $tickets[1]->created_at->diffForHumans() }}</td>
                       </tr>
 
+                      <tr>
+                        <td><a href="#">#{{ $tickets[2]->ticketId }}</a></td>
+                        <td class="font-weight-600">{{ $tickets[2]->subject }}</td>
+                        <td class="font-weight-600">{{ $tickets[2]->name }}</td>
+                        <td><div class="badge badge-success">Resolved</div></td>
+                        <td>{{ $tickets[2]->created_at->diffForHumans() }}</td>
+                      </tr>
+
+                      <tr>
+                        <td><a href="#">#{{ $tickets[3]->ticketId }}</a></td>
+                        <td class="font-weight-600">{{ $tickets[3]->subject }}</td>
+                        <td class="font-weight-600">{{ $tickets[3]->name }}</td>
+                        <td><div class="badge badge-success">Resolved</div></td>
+                        <td>{{ $tickets[3]->created_at->diffForHumans() }}</td>
+                      </tr>
+
                     </tbody></table>
                   </div>
                 </div>

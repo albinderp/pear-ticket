@@ -24,9 +24,11 @@
           @include('layouts.sidebar')
           <div class="main-content" style="min-height: 725px;">
             <section class="section">
+              @if( !Request::is('ticket') )
               <div class="section-header">
               <h1>{{ $title }}</h1>
             </div>
+            @endif
               @yield('content')
             </section>
             </div>
